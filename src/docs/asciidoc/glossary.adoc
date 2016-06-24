@@ -1,0 +1,47 @@
+include::_config.adoc[]
+
+= Glossary for project Address-Synchronization
+
+This document describes the definitions of <<index.adoc#,project Address-Synchronization>>.
+
+[[section-users]]
+== User types
+
+The following user types / roles interact with the system:
+
+[glossary]
+System Admin::
+Monitors the system and reacts on failures.
+Adaptor::
+Configures the routing rules.
+
+[[section-domain-model]]
+== Domain Model
+
+.Domain model overview
+[plantuml, domain_model, png]
+--
+class Participant <<Entity>> {
+}
+enum PStatus {
+  UNKNOWN
+  OFFLINE
+  AVAILABLE
+}
+class Address {
+}
+class ElementaryAddress <<ValueObject>> {
+  String address
+}
+class ParallelAddress {
+}
+class CombinedAddress {
+}
+Participant "status" *- "1" PStatus
+Participant "address" *-left- "1" ElementaryAddress
+Address <|-- ElementaryAddress
+Address <|-- ParallelAddress
+Address <|-- CombinedAddress
+ParallelAddress o- ElementaryAddress
+CombinedAddress o- Address
+--

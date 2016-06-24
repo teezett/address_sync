@@ -1,0 +1,35 @@
+// configure EN settings for asciidoc
+include::_config.adoc[]
+
+= Address-Synchronization
+
+The idea of this tool is to synchronize different address book formats at different locations.
+
+This could be for example the synchronization of vCard files with an LDAP server,
+or the synchronization of an Excel file with a CardDAV server.
+
+[[section-goals]]
+== Goals
+
+The intention of this project is to solve the following goals:
+
+* Goal 1
+
+== Documentation
+
+The project VAN-NG contains several kinds of documentation:
+
+<<glossary.adoc#,Glossary>>::
+The glossary for the project.
+
+<<specification.adoc#,Specification>>::
+The software system specification for this system.
+
+<<requirements.adoc#,Requirements>>::
+The description of the requirements which shall be fulfilled with this system.
+
+//<<architecture.adoc#,Architecture>>::
+//The description of the software architecture and the decisions which lead to them.
+
+//<<manual.adoc#,User Manual>>::
+//The manual for users and system administrators to explain, how to use the tool.

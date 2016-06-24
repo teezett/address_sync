@@ -1,0 +1,19 @@
+include::_config.adoc[]
+
+= Software System Specification for Address-Synchronization
+
+This document describes the specification of <<index.adoc#,project Address-Synchronization>>.
+
+[[section-usecase-overview]]
+== Use Case Overview
+
+For the software the following use cases have been identified:
+
+.Use case overview
+[plantuml, use_cases, png]
+--
+--
+
+The identified use cases will be described below.
+The https://www.sophist.de/fileadmin/SOPHIST/UML/uml2-4_linknummern/12-1_Schablone_fuer_%20Use-Case-Beschreibung.pdf[use case template of the SOPHIST group] and the http://alistair.cockburn.us/Use+case+fundamentals[description of Alistair Cockburn] will be used here.
+Instead of a textual description of the steps activity diagrams are used.
